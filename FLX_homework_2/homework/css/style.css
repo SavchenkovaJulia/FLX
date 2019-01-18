@@ -1,0 +1,130 @@
+@media print {
+    @page {
+        margin: 2cm;
+    }
+    nav, #about, section:not(:first-of-type) {
+        display: none;
+    }
+    .tm-team-description-container {
+        max-width: 85%;
+    }
+    .flex-item:first-of-type {
+        padding-right: 10%;
+    }
+    .tm-banner-inner {
+        width: 90%;
+    }
+    img[src*="epam-mexico"] {
+        width: 70%;
+    }
+}
+
+section:first-of-type .tm-content-box.flex-2-col {
+    display: flex;
+    align-items: center;
+}
+
+#about .gallery-container li:nth-child(odd) h2:hover {
+    background-color: #87CEFA;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+p::first-letter {
+    font-size: 30px;
+    color: #87CEFA;
+}
+
+nav, .tm-content-box {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6)
+}
+
+section {
+    position: relative;
+}
+
+@media screen {
+    section::before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        border-top: 25px solid #87CEFA;
+        border-right: 250px solid transparent;
+        border-bottom: 0px solid #87CEFA;
+        border-left: 0px solid transparent;
+    }
+}
+
+.carousel-inner h2:first-child {
+    color: #dcdcdc;
+    letter-spacing: 5px;
+}
+
+h2+p {
+    font-style: italic;
+}
+
+.tm-team-description-container p {
+    text-indent: 30px;
+    line-height: 1.6;
+}
+
+.heading a  {
+    color: #000000;
+}
+.heading a:visited {
+    border-bottom: 1px solid #76cdd7;
+}
+
+.heading a:hover {
+    color: #76cdd7;
+    border-bottom: 1px solid #76cdd7;
+}
+
+.heading .text::after {
+    content: "New";
+    color: #ff0000;
+    font-size: 10px;
+    position: relative;
+    top: -5px;
+}
+
+.blocks li {
+    padding: 10px;
+}
+
+.blocks .box p {
+    line-height: 1.6;
+}
+
+.blocks .box p::first-letter {
+    color: #000000;
+}
+
+.mandatory-field::after {
+    content: "*";
+    color: #ff0000;
+    font-weight: bold;
+}
+
+button[type="submit"] {
+    color: #76cdd7;
+    background-color: #ffffff;
+    border: 1px solid #76cdd7;
+    border-radius: 0;
+    width: 10%;
+    float: right;
+}
+
+button[type="submit"]:hover {
+    color: #ffffff;
+    border: 1px solid #76cdd7;
+    background-color: #87CEFA;
+}
+
+nav li:hover {
+    background-color: #999;
+}
