@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+body {
+    font-family: 'Open Sans';
+    font-size: 13px;
+    background-color: #f0f0f0;
+}
+
+header {
+    color: #fff;
+    height: 75%;
+}
+
+.header_bg {
+    background: url('/img/sample2.jpg') no-repeat center;
+    background-size: cover;
+    height: 100%;
+}
+
+.top_navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    margin-bottom: 55px;
+}
+
+.top_navbar a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 35px;
+    cursor: pointer;
+}
+
+.top_navbar a:hover {
+    font-weight: bold;
+}
+
+.top_navbar>a {
+    letter-spacing: 5px;
+}
+
+.top_title_block {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    cursor: default;
+}
+
+.top_title_block span {
+    font-size: 90px;
+}
+
+.top_title_block h1 {
+    letter-spacing: 5px;
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.top_btn_block {
+    display: flex;
+    justify-content: space-around;
+}
+
+.top_btn_block button {
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 70px;
+    background: rgba(7, 7, 7, 0.336);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.top_btn_block button:hover {
+    background: rgba(7, 7, 7, 0.589);
+    box-shadow: 0 0 2px #fff;
+}
+
+.skewed_block_container {
+    width: 100%;
+    height: 25vh;
+    position: relative;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+}
+
+.clipPolygon {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%);
+    background-color: #000;
+}
+
+.skewed_block_container .clipPolygon p {
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    padding-right: 30px;
+    font-size: 13px;
+}
+
+.skewed_block_container div:last-child {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px 30px;
+}
+
+.skewed_block_container p {
+    color: #000;
+    font-size: 17px;
+}
+
+.skewed_block_container span {
+    font-weight: bold;
+}
+
+.articles_block h1 {
+    text-align: center;
+    font-weight: lighter;
+}
+
+.articles_block h1 span {
+    font-weight: bold;
+}
+
+.articles_block .flex_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 40vh;
+    padding: 20px 40px 70px;
+}
+
+.articles_block .flex_container div:first-child {
+    flex-basis: 50%;
+    position: relative;
+}
+
+.articles_block .image_block {
+    height: 100%;
+    width: 100%;
+    background: url('/img/sample.jpg') no-repeat top;
+    box-shadow: inset 0 0 60px 15px rgba(0, 0, 0, 0.75);
+    background-size: cover;
+    position: relative;
+}
+
+.articles_block .image_block button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 2px solid #fff;
+    margin: 15px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.671);
+    padding: 10px;
+    transition: 1s;
+}
+
+.articles_block .image_block button:hover {
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #000;
+}
+
+.articles_block .image_block p {
+    position: absolute;
+    padding: 10px;
+    bottom: 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+.articles_block .image_block p span {
+    font-weight: bold;
+}
+
+.articles_block .flex_container div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5px;
+    flex-basis: 40%;
+    text-align: center;
+}
+
+.cards_block {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.cards_block .flex_container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.459);
+    padding: 10px;
+    flex-basis: 270px;
+}
+
+.card p {
+    padding: 10px 5px;
+}
+
+.card button {
+    background-color: #097774;
+    font-weight: bold;
+    border: none;
+    color: #fff;
+    display: block;
+    width: 90%;
+    padding: 5px 0;
+    margin: 10px auto;
+    transition: 1s;
+}
+
+.card button:hover {
+    background-color: #054745;
+    cursor: pointer;
+}
+
+.subscribe_block {
+    padding: 40px 20px;
+}
+
+.subscribe_block h2 {
+    font-weight: lighter;
+}
+
+.subscribe_block h2 span {
+    font-weight: bold;
+}
+
+.subscribe_block .flex-container {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.subscribe_block .flex-container input {
+    margin-left: 10px;
+    width: 110px;
+    margin-right: 5px;
+    border: 1px solid #000;
+}
+
+.subscribe_block .flex-container input::placeholder {
+    color: #000;
+    font-size: 11px;
+    padding-left: 3px;
+}
+
+.subscribe_block .flex-container button {
+    border: none;
+    background-color: #097774;
+    color: #fff;
+    font-size: 11px;
+    padding: 0 5px;
+    font-weight: bold;
+}
+
+.subscribe_block .flex-container button:hover {
+    background-color: #054745;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #fff;
+}
+
+footer p {
+    color: #9E9E9E;
+}
+
+footer .flex_container {
+    display: flex;
+}
+
+footer>.flex_container {
+    padding: 40px 10px;
+}
+
+footer .flex_block {
+    padding: 70px 10px;
+}
+
+footer .flex_block h3 {
+    padding-bottom: 20px;
+}
+
+footer .flex_block:first-child, .flex_block:nth-child(2) {
+    flex-basis: 25%;
+}
+
+footer .flex_block:nth-child(3) {
+    flex-basis: 10%;
+}
+
+footer .flex_block:nth-child(4) {
+    flex-basis: 40%;
+    position: relative;
+}
+
+.newsletter_block {
+    width: 50%;
+    position: absolute;
+    right: 30px;
+}
+
+.newsletter_block input {
+    width: 110px;
+    padding: 4px;
+    border: 1px solid #000;
+}
+
+.newsletter_block input::placeholder {
+    color: #000;
+    font-size: 11px;
+}
+
+.newsletter_block button {
+    border: none;
+    background-color: #097774;
+    color: #fff;
+    font-size: 11px;
+    padding: 7px 5px;
+    font-weight: bold;
+}
+
+.newsletter_block button:hover {
+    background-color: #054745;
+    cursor: pointer;
+}
+
+footer .flex_container:last-child {
+    max-height: 40px;
+    border-top: 2px solid #f0f0f0;
+    margin: 0 20px;
+}
+
+footer .bottom_navbar .flex_container {
+    justify-content: space-between;
+    margin-bottom: 10px;
+    padding: 20px 0;
+}
+
+footer .bottom_navbar nav a {
+    text-decoration: none;
+    color: #000;
+    padding: 0 5px;
+}
+
+footer .bottom_navbar nav a:hover {
+    font-weight: bold;
+}
