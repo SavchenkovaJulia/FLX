@@ -4,7 +4,7 @@ let c = parseInt(prompt('Enter c', ' '));
 
 function getSolution() {
   let d = Math.pow(b, 2) - 4 * a * c;
-  let x = (-b / 2) * a;
+  let x = -b / (2 * a);
   let x1 = (-b + Math.sqrt(d)) / (2 * a);
   let x2 = (-b - Math.sqrt(d)) / (2 * a);
 
