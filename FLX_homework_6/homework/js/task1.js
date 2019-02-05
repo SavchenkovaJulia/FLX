@@ -15,7 +15,7 @@ function getSolution() {
     return 'no solution';
   }
   if (d === 0) {
-    return x;
+    return `x = ${x}`;
   } else {
     return `x1 = ${x1} and x2 = ${x2}`;
   }
