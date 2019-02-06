@@ -1,6 +1,6 @@
 let attempts = 3;
 let maxRange = 5;
-let randomNumber = getRandomNumber();
+let randomNumber = Math.floor(Math.random() * maxRange);
 let prize = 0;
 let stageMaxPrize = 10;
 let possiblePrize = stageMaxPrize;
@@ -11,10 +11,6 @@ if (start) {
   startGame();
 } else {
   alert('You did not become a millionaire, but can.');
-}
-
-function getRandomNumber() {
-  return Math.floor(Math.random() * maxRange);
 }
 
 function startGame() {
@@ -33,7 +29,7 @@ function startGame() {
         stageMaxPrize = stageMaxPrize * 3;
         possiblePrize = stageMaxPrize;
         maxRange = maxRange * 2;
-        randomNumber = getRandomNumber();
+        randomNumber = Math.floor(Math.random() * maxRange);
 
         return startGame();
       } else {
