@@ -6,3 +6,5 @@ function formatTime(x) {
 
   return `${days} day(s) ${hours} hour(s)  ${minutes} minute(s)`;
 }
+
+formatTime(120);

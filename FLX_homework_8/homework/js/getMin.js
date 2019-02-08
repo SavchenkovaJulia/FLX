@@ -7,3 +7,5 @@ function getMin() {
   }
   return min;
 }
+
+getMin(3, 0, -3);
