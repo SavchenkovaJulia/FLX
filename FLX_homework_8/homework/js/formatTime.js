@@ -4,5 +4,5 @@ function formatTime(x) {
   let hours = Math.floor((num - days * 1400) / 60);
   let minutes = num - (hours * 60 + days * 1400);
 
-  return `${days} day(s) ${hours} hours  ${minutes} minutes`;
+  return `${days} day(s) ${hours} hour(s)  ${minutes} minute(s)`;
 }
