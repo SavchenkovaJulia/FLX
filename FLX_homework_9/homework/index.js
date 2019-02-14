@@ -174,14 +174,14 @@ showFormattedDate(new Date('2019-01-27T01:10:00'));
 
 function isEvenYear(date) {
   let year = date.getFullYear();
-  return year % 2 === 0;
+  return !(year % 2);
 }
 
 isEvenYear(new Date('2019-01-27T01:10:00'));
 
 function isEvenMonth(date) {
   let month = date.getMonth() + 1;
-  return month % 2 === 0;
+  return !(month % 2);
 }
 
 isEvenMonth(new Date('2019-02-27T01:10:00'));
