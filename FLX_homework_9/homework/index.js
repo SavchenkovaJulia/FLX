@@ -3,6 +3,7 @@ function findTypes() {
   for (let i = 0; i < arguments.length; i++) {
     result.push(typeof arguments[i]);
   }
+
   return result;
 }
 
@@ -23,6 +24,7 @@ function mapArray(array, userFunction) {
   executeforEach(array, el => {
     newArray.push(userFunction(el));
   });
+
   return newArray;
 }
 
@@ -37,6 +39,7 @@ function filterArray(array, userFunction) {
       newArray.push(el);
     }
   });
+
   return newArray;
 }
 
@@ -51,6 +54,7 @@ function getAmountOfAdultPeople(data) {
       result.push(el);
     }
   });
+
   return result.length;
 }
 
@@ -99,6 +103,7 @@ function getGreenAdultBananaLovers(data) {
       return el;
     }
   });
+
   return mapArray(filteredData, el => {
     return el.name;
   });
@@ -146,6 +151,7 @@ function keys(obj) {
       result.push(prop);
     }
   }
+
   return result;
 }
 
@@ -158,6 +164,7 @@ function values(obj) {
       result.push(obj[prop]);
     }
   }
+
   return result;
 }
 
@@ -174,6 +181,7 @@ showFormattedDate(new Date('2019-01-27T01:10:00'));
 
 function isEvenYear(date) {
   let year = date.getFullYear();
+
   return !(year % 2);
 }
 
@@ -181,6 +189,7 @@ isEvenYear(new Date('2019-01-27T01:10:00'));
 
 function isEvenMonth(date) {
   let month = date.getMonth() + 1;
+
   return !(month % 2);
 }
 
