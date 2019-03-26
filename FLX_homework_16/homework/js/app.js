@@ -107,7 +107,8 @@ Speedbot.prototype.prepareEngine = function() {
 
 Speedbot.prototype.move = function(direction) {
   Bot.prototype.move.call(this, direction);
-  if (this.engineIsPrepared) {
+
+  if (this.engineStatus) {
     this.engineStatus = false;
     return;
   }
