@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  margin-top: 40px;
+}
+
+main .card {
+  width: 30%;
+  margin: 5px;
+}
+
+main .card-img-top {
+  max-height: 200px;
+  max-width: 400px;
+}
+
+main .card-text {
+  font-size: 14px;
+  margin: 2px;
+}
+
+main .card-text:last-of-type {
+  margin-bottom: 15px;
+}
+
+main .card-title {
+  cursor: pointer;
+}
+
+main .title {
+  text-transform: uppercase;
+}
+
+main .post-body {
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 15px;
+  margin: 0;
+}
+
+main .comment-body {
+  background: rgb(145, 224, 149);
+  padding: 5px;
+  border-radius: 15px;
+  font-size: 12px;
+  margin-top: -10px;
+}
+
+main .user-email {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+main .comments-title {
+  font-weight: bold;
+  margin-top: 15px;
+  font-size: 18px;
+  border-bottom: 1px solid #6b6b6b;
+}
