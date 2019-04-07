@@ -1,1 +1,21 @@
 # FLX
+FLX_1  - HTML Basics;
+FLX_2  - CSS Basics;
+FLX_3  - Preprocessors;
+FLX_4  - CSS Layouts;
+FLX_5  - Responsive;
+FLX_6  - Intro to JS;
+FLX_7  - Control flow;
+FLX_8  - Functions;
+FLX_9  - Data types;
+FLX_10 - Scope & Context;
+FLX_11 - DOM;
+FLX_12 - BOM;
+FLX_13 - CSS frameworks;
+FLX_14 - CSS Optimization;
+FLX_15 - OOP;
+FLX_16 - Inheritance;
+FLX_17 - ES Next;
+FLX_18 - AJAX;
+FLX_19 - Tools;
+FLX_20 - React.js / JSX;
