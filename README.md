@@ -19,3 +19,4 @@ FLX_17 - ES Next;
 FLX_18 - AJAX;
 FLX_19 - Tools;
 FLX_20 - React.js / JSX;
+FLX_21 - Angular Part 1;
