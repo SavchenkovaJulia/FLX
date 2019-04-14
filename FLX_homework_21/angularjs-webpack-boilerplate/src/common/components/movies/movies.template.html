@@ -1,0 +1,15 @@
+<input ng-model="search.title" placeholder="Movie name" />
+<div class="movies">
+  <a
+    class="movies__item_wrap"
+    ng-repeat="movie in $ctrl.movies | filter:search:strict"
+    class="movies__overview"
+    fresh-movie
+    ui-sref="movie-info({ movieId: movie.id })"
+  >
+    <div class="movies__item">
+      <img src="{{ movie.poster_path }}" alt="{{ movie.title }}" />
+      <p class="movies__title">{{ movie.title }}</p>
+    </div>
+  </a>
+</div>

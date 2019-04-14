@@ -1,0 +1,38 @@
+input {
+  display: block;
+  margin: 120px auto 0 auto;
+  padding: 10px 5px;
+  width: 350px;
+}
+
+.movies {
+  padding: 40px 10px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+
+  .movies__item_wrap {
+    margin: 0 5px;
+  }
+
+  .movies__item {
+    flex-grow: 1;
+    width: 200px;
+    margin: 20px;
+
+    .movies__title {
+      padding: 5px;
+    }
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  img {
+    margin: 0 auto;
+    width: 100%;
+    align-self: center;
+  }
+}
