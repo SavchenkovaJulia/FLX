@@ -1,0 +1,15 @@
+<h2>List</h2>
+<ul class="employees">
+  <li *ngFor="let employee of employees">
+    {{ employee.firstName }} {{ employee.lastName }}
+    <div class="icons">
+      <i class="fas fa-trash" (click)="delete(employee)"></i
+      ><a routerLink="/edit/{{ employee.id }}"
+        ><i class="fas fa-pencil-alt"></i></a
+      ><a routerLink="/employee/{{ employee.id }}"
+        ><i class="fas fa-arrow-right"></i
+      ></a>
+    </div>
+  </li>
+</ul>
+<button class="add-btn">Add New</button>

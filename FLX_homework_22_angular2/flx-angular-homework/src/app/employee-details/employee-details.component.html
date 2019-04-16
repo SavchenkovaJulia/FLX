@@ -1,0 +1,10 @@
+<div *ngIf="employee">
+  <h2>Details</h2>
+  <div><span>First Name: </span>{{employee.firstName }}</div>
+  <div><span>Last Name: </span>{{employee.lastName }}</div>
+  <div><span>Age: </span>{{employee.age }}</div>
+  <div><span>City: </span>{{employee.city }}</div>
+  <div><span>Gender: </span>{{employee.gender }}</div>
+  <div><span>Summary: </span>{{employee.description }}</div>
+  <button (click)="goBack()">Go back</button>
+  </div>

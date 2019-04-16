@@ -1,0 +1,44 @@
+<h2>Edit</h2>
+<div *ngIf="employee">
+  <div>
+    <label>First Name:
+      <input [(ngModel)]="employee.firstName" placeholder="name" />
+    </label>
+  </div>
+  <div>
+    <label>Last Name:
+      <input [(ngModel)]="employee.lastName" placeholder="name" />
+    </label>
+  </div>
+  <div>
+    <label>Age:
+      <input type="range" [(ngModel)]="employee.age" min="16" max="99" value="16" class="slider" id="myRange" />
+      <span id="demo"> Value:{{ employee.age }} </span>
+    </label>
+  </div>
+  <div>
+    <label>City:
+      <select name="select"  [(ngModel)]="employee.city">
+        <option value="London">London</option>
+        <option value="Chester">Chester</option>
+        <option value="Liverpool">Liverpool</option>
+        <option value="Edinburg">Edinburg</option>
+      </select>
+    </label>
+  </div>
+    <div>
+    <label>Gender:
+      <select name="select"  [(ngModel)]="employee.gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="notDisclosed">Not Disclosed</option>
+      </select>
+    </label>
+  </div>
+  <div>
+    <label>Description:
+      <textarea name="" id="" cols="25" rows="3"  [(ngModel)]="employee.description"></textarea>
+    </label>
+  </div>
+  <button (click)="save()">Save</button>
+</div>
