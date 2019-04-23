@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>RPS Game</title>
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Let’s play!</h1>
+    </header>
+    <main>
+      <div class="rules">
+        <p class="rules__text">
+          Scissors beats a paper<br />
+          Paper beats a rock<br />
+          Rock beats a scissors<br />
+          And we play up to tree wins!
+        </p>
+      </div>
+      <div class="controller">
+        <div class="controller__item rock">
+          <img class="controller__img" src="img/rock.png" alt="rock" />
+          <button class="controller__button" id="rockBtn">Rock</button>
+        </div>
+        <div class="controller__item paper">
+          <img class="controller__img" src="img/paper.png" alt="paper" />
+          <button class="controller__button" id="paperBtn">Paper</button>
+        </div>
+        <div class="controller__item scissors">
+          <img class="controller__img" src="img/scissors.png" alt="scissors" />
+          <button class="controller__button" id="scissorsBtn">Scissors</button>
+        </div>
+        <button class="controller__button reset" id="resetBtn">Reset</button>
+      </div>
+      <div class="results" id="resultsBlock">
+        User
+        <p class="results__user" id="userScore">0</p>
+        Computer
+        <p class="results__cpu" id="CPUScore">0</p>
+        <div class="results__log" id="resultLog"></div>
+      </div>
+    </main>
+    <script src="bundle.js"></script>
+  </body>
+</html>
