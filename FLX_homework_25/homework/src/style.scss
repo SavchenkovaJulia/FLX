@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+$turqoise: #26a69a;
+$red: #E57373;
+$gray: #f8f8f8;
+$white: #fff;
+
+$shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+0 3px 1px -2px rgba(0, 0, 0, 0.12),
+0 1px 5px 0 rgba(0, 0, 0, 0.2);
+
+.root {
+    font-family: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.user-search {
+    text-align: center;
+    font-weight: bold;
+    padding: 15px 0;
+    box-shadow: $shadow;
+
+    input {
+        padding: 5px;
+        border: none;
+        border-bottom: 1px solid;
+    }
+}
+
+button {
+    cursor: pointer;
+    border: none;
+
+    &:focus {
+        outline: 0;
+    }
+
+    &.del-btn {
+        color: $white;
+        background: $red;
+        box-shadow: $shadow;
+        padding: 5px;
+    }
+}
+
+.users-table {
+    padding: 10px 30px;
+    width: 100%;
+    border-spacing: 0;
+
+    thead {
+        text-align: left;
+        background: $turqoise;
+        color: $white;
+
+        th {
+            padding: 10px;
+        }
+    }
+
+    tbody {
+        .no-users-message {
+            padding: 5px;
+            color: $red;
+            font-weight: bold;
+        }
+
+        tr {
+            cursor: pointer;
+            font-size: 14px;
+
+            img {
+                width: 120px;
+                padding: 10px;
+            }
+
+            &:nth-child(odd) {
+                background: $gray;
+            }
+
+        }
+    }
+}
+
+.load-more {
+    text-align: center;
+    box-shadow: $shadow;
+    background: $white;
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    width: 100%;
+    font-size: 19px;
+
+    p {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    button {
+        font-size: 19px;
+        text-transform: uppercase;
+        width: 400px;
+        padding: 10px 0;
+        border-radius: 100px;
+        background: $gray;
+        box-shadow: $shadow;
+    }
+}
